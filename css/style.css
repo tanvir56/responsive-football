@@ -68,6 +68,66 @@ body {
 }
 
 
+/*-----------------------
+        header css
+------------------------*/
+
+header {
+    background-color: #2D25A0;
+    padding: 20px 156px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+   
+}
+
+.menu {
+
+    width: 100%;
+}
+
+.menu label {
+
+    display: none;
+}
+
+.menu input {
+
+    position: absolute;
+    display: none;
+    
+}
+
+.menu-list {
+    padding-left: 0px;
+}
+
+.menu-list li {
+    
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.logout .btn {
+
+    float: right;
+    
+}
+
+.logout .btn i {
+
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+
+
 /* ----------------
    top-section css
 ------------------ */
@@ -97,7 +157,7 @@ body {
 
 }
 
-.top-half-width img:hover {
+.top-banner img:hover {
 
     transform: scale(1.1);
     cursor: pointer;
@@ -350,9 +410,9 @@ footer {
 }
 
 
-/* --------------------
-    media query
---------------------- */
+/* ---------------------------------
+            media query
+----------------------------------- */
 
 /*------------- mobile device --------*/
 
@@ -377,7 +437,39 @@ footer {
         font-size: 33px;
     }
 
+        /* ---------header mobile view--------------- */
 
+    header {
+
+        padding: 20px;
+    }
+
+        
+    .menu label {
+
+        display: block;
+        color: white;
+        font-size: 40px;
+    }
+
+    #toggle:checked + .menu-list {
+
+        display: block;
+    }
+
+    .menu-list {
+
+        display: none;
+        background-color: #2D25A0;
+        position: absolute;
+        width: 88%;
+    }
+
+    .menu-list li {
+
+        display: block;
+        text-align: center;
+    }
 
     /*------------top-section mobile---------*/
 
