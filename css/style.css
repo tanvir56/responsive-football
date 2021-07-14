@@ -64,7 +64,6 @@ body {
 
     font-size: 48px;
     color: #0A0826;
-    line-height: 60px;
     margin: 0px;
 }
 
@@ -87,7 +86,6 @@ body {
 
     color: #FFFFFF;
     font-size: 64px;
-    line-height: 80px;
     margin: 0px 0px 27px 0px;
 }
 
@@ -167,7 +165,6 @@ body {
 .highlight-info p {
 
     font-size: 16px;
-    line-height: 28px;
     color: #6C6C6C;
 
 }
@@ -342,4 +339,95 @@ footer {
 }
 
 
-/* -------------------- */
+/* --------------------
+    media query
+--------------------- */
+
+/*------------- mobile device --------*/
+
+@media only screen and (max-width:688px) {
+
+    /*-------------common style---------*/
+
+    .container {
+
+        padding: 60px 30px;
+    }
+
+    .grid-two-col {
+
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 40px;
+
+    }
+
+    .section-title {
+
+        font-size: 33px;
+    }
+
+
+
+    /*------------top-section mobile---------*/
+
+
+    
+    .top-info h1 {
+
+        font-size: 40px;
+        
+    }
+
+
+    .top-banner img {
+
+        width: 100%;
+        height: 100%;
+    }
+
+     /*------------players-section mobile---------*/
+
+     .players {
+
+        grid-template-columns: repeat(1, 1fr);
+     }
+
+     .player img {
+
+        width: 100%;
+    
+     }
+
+     /*------------highlight-section mobile---------*/
+
+
+     .highlight-banner img {
+
+        width: 100%;
+        height: 100%;
+     }
+
+     /*------------news-section mobile---------*/
+
+    .blogs {
+
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 40px;
+    }
+
+    /*------------footer mobile---------*/
+
+    footer {
+
+        padding-top: 0px;
+    }
+    .footer-info img {
+
+        width: 80%;
+    }
+
+    
+}
+
+/* bhai kaj kore na
+ */
