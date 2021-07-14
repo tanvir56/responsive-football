@@ -415,6 +415,11 @@ footer {
         grid-row-gap: 40px;
     }
 
+    .blog-banner img {
+
+        width: 100%;
+    }
+
     /*------------footer mobile---------*/
 
     footer {
@@ -428,6 +433,3 @@ footer {
 
     
 }
-
-/* bhai kaj kore na
- */
