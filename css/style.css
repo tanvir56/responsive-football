@@ -407,6 +407,14 @@ footer {
         height: 100%;
      }
 
+     /*------------next-matches-section mobile---------*/
+
+     .match {
+         
+        flex-direction: column;
+        
+     }
+
      /*------------news-section mobile---------*/
 
     .blogs {
